@@ -1,0 +1,16 @@
+.active{
+    background-color: rgb(131, 146, 231);
+}
+
+li{
+    text-decoration: none;
+}
+.space{
+    flex: 1 1 auto;  
+}
+
+mat-toolbar{
+    background-color: red;
+    display: flex; 
+    justify-content: space-between;
+}

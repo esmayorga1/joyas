@@ -1,0 +1,6 @@
+<h1>Detalle del producto</h1>
+<div *ngFor="let product of products index as i">
+    <strong > {{ product.id}} </strong>
+    <img src="{{product.imgUrl}}" alt="Error de carga">
+    <p>{{product.description}}</p>
+</div>

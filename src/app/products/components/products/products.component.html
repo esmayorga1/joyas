@@ -1,0 +1,26 @@
+<h1> Productos</h1>
+<div class="product" >
+
+    <mat-card  *ngFor="let product of products index as i">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{product.name}}</mat-card-title>
+          <mat-card-subtitle>{{product.price}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{product.imgUrl}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{product.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+
+            <a mat-button [routerLink]="['/products', product.id]"> Ver detalle</a>
+            <a mat-button [routerLink]="['/products', product.id]"> Comprar </a>
+            
+          <!-- <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button> -->
+        </mat-card-actions>
+      </mat-card>
+    
+</div>

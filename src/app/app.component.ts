@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'joyas';
+
+ products = [
+   { 
+     name : 'Juan',
+     country: 'Colombia',
+     age: 25
+  },
+
+  { 
+    name : 'Gina',
+    country: 'Holanda',
+    age: 20
+ }
+ ]
+
+ nombres = 'sebastian';
+
+
 }
